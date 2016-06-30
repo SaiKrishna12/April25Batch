@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Grid DB Demo" duration-ms="132774" started-at="2016-06-29T16:50:02Z" finished-at="2016-06-29T16:52:15Z">
+    <groups>
+    </groups>
+    <test name="On Firefox" duration-ms="124460" started-at="2016-06-29T16:50:02Z" finished-at="2016-06-29T16:52:07Z">
+      <class name="day35.DBTestingonGrid">
+        <test-method status="PASS" signature="registrationTest(java.lang.String)[pri:0, instance:day35.DBTestingonGrid@1bd5b1dc]" name="registrationTest" duration-ms="124282" started-at="2016-06-29T09:50:03Z" finished-at="2016-06-29T09:52:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registrationTest -->
+      </class> <!-- day35.DBTestingonGrid -->
+    </test> <!-- On Firefox -->
+    <test name="On Chrome" duration-ms="132746" started-at="2016-06-29T16:50:02Z" finished-at="2016-06-29T16:52:15Z">
+      <class name="day35.DBTestingonGrid">
+        <test-method status="PASS" signature="registrationTest(java.lang.String)[pri:0, instance:day35.DBTestingonGrid@7ba3b8a1]" name="registrationTest" duration-ms="132605" started-at="2016-06-29T09:50:03Z" finished-at="2016-06-29T09:52:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registrationTest -->
+      </class> <!-- day35.DBTestingonGrid -->
+    </test> <!-- On Chrome -->
+  </suite> <!-- Grid DB Demo -->
+</testng-results>

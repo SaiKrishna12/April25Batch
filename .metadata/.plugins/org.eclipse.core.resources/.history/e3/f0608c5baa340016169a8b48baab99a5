@@ -1,0 +1,14 @@
+package com.selenium;
+
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.Test;
+
+public class FirefoxLaunch {
+	@Test
+	public void launchApp()
+	{
+		FirefoxDriver driver=new FirefoxDriver();
+		
+	}
+
+}

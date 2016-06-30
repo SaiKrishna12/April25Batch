@@ -1,0 +1,32 @@
+package day35;
+
+import java.sql.Connection;
+
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class DBTesting1 {
+
+	/**
+	 * @param args
+	 * @throws ClassNotFoundException 
+	 * @throws IllegalAccessException 
+	 * @throws InstantiationException 
+	 */
+	public static void main(String[] args) throws InstantiationException, IllegalAccessException, ClassNotFoundException {
+		Connection conn=null;
+		String url="jdbc:mysql://localhost:3306/";
+		String dbname="sys";
+		String DBdriver="com.mysql.jdbc.Driver";
+		String userName="root";
+		String password="krishna";
+		
+		Class.forName(DBdriver).newInstance();
+		String str="org.openqa.selenium.firefox.FirefoxDriver";
+		
+		Class.forName(str).newInstance();
+		
+		
+
+	}
+
+}

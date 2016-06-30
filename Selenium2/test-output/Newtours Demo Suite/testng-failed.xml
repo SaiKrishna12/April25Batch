@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Newtours Demo Suite]">
+  <test name="End to end Testing(failed)">
+    <classes>
+      <class name="day27.testsuite.FlightConfirmation">
+        <methods>
+          <include name="flightConfirmTesT"/>
+        </methods>
+      </class> <!-- day27.testsuite.FlightConfirmation -->
+      <class name="day27.testsuite.SelectAFlight">
+        <methods>
+          <include name="selectFlightTest"/>
+        </methods>
+      </class> <!-- day27.testsuite.SelectAFlight -->
+      <class name="day27.testsuite.BookAFlight">
+        <methods>
+          <include name="bookFlightTest"/>
+        </methods>
+      </class> <!-- day27.testsuite.BookAFlight -->
+    </classes>
+  </test> <!-- End to end Testing(failed) -->
+</suite> <!-- Failed suite [Newtours Demo Suite] -->

@@ -1,0 +1,11 @@
+package com.onlineselenium;
+
+public class BrowserAutomation {
+	
+	@Test
+	public void sampleTest()
+	{
+		Firefoxd
+	}
+
+}

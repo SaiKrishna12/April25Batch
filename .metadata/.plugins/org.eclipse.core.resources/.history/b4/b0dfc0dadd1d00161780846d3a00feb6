@@ -1,0 +1,22 @@
+package day11;
+
+public class MethodOverloading {
+
+	public static void sumInt(int a,int b)
+	{
+		System.out.println(a+b);
+	}
+	public static void sumDbl(double a,double b)
+	{
+		System.out.println(a+b);
+	}
+	public static void sumString(String a,String b)
+	{
+		System.out.println(a+b);
+	}
+	public static void main(String[] args) {
+		sumInt(10,20);
+
+	}
+
+}

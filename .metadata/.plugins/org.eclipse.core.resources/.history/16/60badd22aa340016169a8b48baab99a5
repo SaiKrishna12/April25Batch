@@ -1,0 +1,10 @@
+package com.selenium;
+
+public class FirefoxLaunch {
+	@Test
+	public void launchApp()
+	{
+		Firefoxd
+	}
+
+}

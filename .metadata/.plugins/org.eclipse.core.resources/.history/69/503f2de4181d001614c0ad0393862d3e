@@ -1,0 +1,13 @@
+package day10;
+
+public class UtiltiyFunctions {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		System.out.println(Math.random());
+
+	}
+
+}

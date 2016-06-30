@@ -1,0 +1,30 @@
+package day22;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+public class CalanderWebTable {
+	ChromeDriver driver;
+	@BeforeTest
+	public void setUp()
+	{
+		
+		System.setProperty("webdriver.chrome.driver","c:\\chromedriver.exe");
+		driver=new ChromeDriver();
+		driver.get("http://cleartrip.com");
+		driver.manage().window().maximize();
+		
+	}
+	@Test
+	public void calanderTest()
+	{
+		driver.findElement(By.id("OneWay")).click();
+		driver.findElement(By.id("FromTag")).sendKeys("Hyderabad, IN - Rajiv Gandhi International (HYD)");
+		driver.findElement(By.id("ToTag")).sendKeys("Los Angeles, US - Los Angeles (LAX)");
+		
+	}
+
+}

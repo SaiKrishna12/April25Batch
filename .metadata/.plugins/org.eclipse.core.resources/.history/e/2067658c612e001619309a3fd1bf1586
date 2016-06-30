@@ -1,0 +1,10 @@
+#id of username field
+username=txtUsername
+
+#xpath of password field
+passwords=//*[@id='txtPassword']
+
+#CSS of login button
+login=#btnLogin
+
+

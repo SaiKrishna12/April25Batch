@@ -1,0 +1,22 @@
+package day16;
+
+public class Car {
+
+	int price;
+	String model;
+	static int wheels;
+	public static void start()
+	{
+		System.out.println("This is to start the car");
+	}
+	public void stop()
+	{
+		System.out.println("This is to stop the car");
+	}
+	public static void main(String[] args) {
+		start();
+		
+
+	}
+
+}

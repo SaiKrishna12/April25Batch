@@ -1,0 +1,21 @@
+<project name="ANT Build Process" default="build">
+	<target name="clean">
+		<delete dir="E:\April25Batch\Selenium2\Build"/>
+	</target>
+	<target name="init" depends="clean">
+		<mkdir dir="E:\April25Batch\Selenium2\Build"/>
+		<mkdir dir="E:\April25Batch\Selenium2\Build\Classes"/>
+		<mkdir dir="E:\April25Batch\Selenium2\Build\JarFile"/>
+	</target>
+	<target name="compile" depends="init">
+		 <javac srcdir="E:\April25Batch\Selenium2\src"
+         destdir="E:\April25Batch\Selenium2\Build\Classes"
+         classpath="E:\April25Batch\Selenium2\lib\selenium-server-standalone-2.48.2.jar"
+        
+  />
+	</target>
+	<target name="build" depends="compile">
+		<jar destfile="E:\April25Batch\Selenium2\Build\JarFile\Selenium2.jar" 
+		     basedir="E:\April25Batch\Selenium2\Build\Classes"/>
+	</target>
+</project>

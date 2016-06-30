@@ -1,0 +1,49 @@
+package day19;
+
+import java.util.Iterator;
+import java.util.Set;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+public class MultipleTabs {
+	FirefoxDriver  driver;
+	@BeforeTest
+	public void setUp()
+	{
+		driver=new FirefoxDriver();
+		driver.get("http://bing.com");
+		
+	}
+	@Test
+	public void windowTest()
+	{
+		driver.findElement(By.linkText("Help")).click();
+		
+		
+		Set<String> windowids=driver.getWindowHandles();
+		Iterator<String> it=windowids.iterator();
+		String x=it.next();
+		String y=it.next();
+		driver.switchTo().window(y);
+		
+		
+		
+		driver.findElement(By.xpath("//*[@id='privacyLabel']")).click();
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+	
+
+}
